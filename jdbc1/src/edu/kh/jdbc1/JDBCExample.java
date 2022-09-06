@@ -90,7 +90,7 @@ public class JDBCExample {
 				// 3. SQL 작성
 				// ** JAVA에서 작성되는 SQL은 마지막에 ;(세미콜론)을 찍지 않아야 한다 **
 				
-				String sql = "SELECT EMP_ID, EMP_NAME, SALARY, HIRE_DATE FROM EMPLOYEE";
+				String sql = "SELECT EMP_ID, EMP_NAME, SALARY, HIRE_DATE FROM EMPLOYEE"; // < 이건 자바의 세미콜론
 				
 				
 				// 4. Statement 객체 생성
