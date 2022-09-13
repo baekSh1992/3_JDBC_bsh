@@ -33,9 +33,8 @@ public class Employee {
 		this.jobName = jobName;
 		this.salary = salary;
 	}
-
+	
 	// 매개변수 11개짜리 생성자
-	// 기본 생성자 단축키 alt + shift + s + o 
 	public Employee(int empId, String empName, String empNo, String email, String phone, int salary, String deptCode,
 			String jobCode, String salLevel, double bonus, int managerId) {
 		super();
@@ -156,7 +155,6 @@ public class Employee {
 		this.managerId = managerId;
 	}
 
-	// 알 + 슆 + s + s
 	@Override
 	public String toString() {
 		return "Employee [empId=" + empId + ", empName=" + empName + ", empNo=" + empNo + ", email=" + email
@@ -165,5 +163,8 @@ public class Employee {
 				+ bonus + ", managerId=" + managerId + "]";
 	}
 
+	
+	
+	
 	
 }
