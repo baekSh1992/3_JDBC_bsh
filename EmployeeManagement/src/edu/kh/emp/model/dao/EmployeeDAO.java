@@ -151,11 +151,16 @@ public class EmployeeDAO {
 					+ " WHERE EMP_ID = " + empId ;
 										// View에서 입력 받은 사번
 			
+			// select/insert/update/delete 작성법 숙지
+			
 			// Statement 생성
 			stmt = conn.createStatement();
 			
 			// SQL 수행 후 결과(ResultSet) 반환 받기
 			rs = stmt.executeQuery(sql);
+			
+			// select : executeQuery
+			// i/u/d  : executeUpdate
 			
 			// ** 조회 결과가 최대 1행인 경우
 			//    불필요한 조건 검사를 줄이기 위해 if문 사용 권장 **
