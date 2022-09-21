@@ -129,8 +129,8 @@ public class MainDAO {
 			pstmt = conn.prepareStatement(sql);
 			
 			// 4. 위치 홀더 ? 에 알맞은 값 대입
-			pstmt.setString(1, loginMember.getMemberId());
-			pstmt.setString(2, loginMember.getMemberPw());
+			pstmt.setString(1, memberId);
+			pstmt.setString(2, memberPw);
 			
 			// 5. SQL(SELECT) 수행 후 결과(ResultSet) 반환 받기
 			rs = pstmt.executeQuery();
