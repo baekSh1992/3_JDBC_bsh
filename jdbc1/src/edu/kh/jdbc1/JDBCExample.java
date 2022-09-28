@@ -28,13 +28,12 @@ public class JDBCExample {
 			// DB 연결 정보를 담은 객체
 			// -> DBMS 타입, 이름, IP, Port, 계정명, 비밀번호 저장
 			// -> DBeaver의 계정 접속 방법과 유사함
-	
 			// * Java와 DB 사이를 연결해주는 통로(Stream과 유사함)
 			
 			Statement stmt = null;
 			// Connection을 통해서
 			// SQL문을 DB에 전달하여 실행하고
-			// 생성된 결과("Result Set" 혹은 "성공한 행의 갯수") 를 반환(Java)하는데 사용되는 개체
+			// 생성된 결과("Result Set" 혹은 "성공한 행의 갯수") 를 반환(Java)하는데 사용되는 객체
 			
 			
 			ResultSet rs = null;
@@ -102,7 +101,7 @@ public class JDBCExample {
 				//	  sql을 적재하여 실행한 후
 				//	  결과를 반환 받아와서
 				//	  rs 변수에 저장
-				rs = stmt.executeQuery(sql);
+				rs = stmt.executeQuery(sql); // executeQuery 질의(sql)를 실행하다 
 				
 				// executeQuery() : SELECT문 수행 메서드, ResultSet 반환
 				//											( rs )
@@ -111,7 +110,7 @@ public class JDBCExample {
 				// 3단계 : SQL을 수행해서 반환 받은 결과(ResultSet)를
 				//		   한 행씩 접근해서 컬럼 값 얻어오기
 				
-				while(rs.next()) {
+				while(rs.next()) { // while 반복 - rs 결과값 - next 한행씩 이동
 					// rs.next() : rs가 참조하는 ResultSet 객체
 					//			   첫 번째 컬럼부터 순서대로 한 행씩 이동하며 
 					//			   다음 행이 있을 경우 true를 반환

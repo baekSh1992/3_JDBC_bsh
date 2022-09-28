@@ -21,7 +21,7 @@ public class CreateXMLFile {
 		// * Properties 컬렉션 객체 * 
 		//  - Map의 후손 클래스
 		//  - Key, Value 모두 String(문자열) 형식
-		//  - XML 파일을 읽고, 쓰d는데 특화된 메서드 제공
+		//  - XML 파일을 읽고, 쓰는데 특화된 메서드 제공
 		
 		
 		try{

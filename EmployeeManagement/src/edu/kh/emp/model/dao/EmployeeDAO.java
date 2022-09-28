@@ -38,7 +38,7 @@ public class EmployeeDAO {
 	
 	private String driver = "oracle.jdbc.driver.OracleDriver";
 	private String url = "jdbc:oracle:thin:@localhost:1521:XE";
-	private String user = "kh_bdh";
+	private String user = "kh_bsh";
 	private String pw = "kh1234";
 	
 //	public void method() {

@@ -33,29 +33,14 @@ public class EmployeeView {
 				System.out.println("3. 사번이 일치하는 사원 정보 조회");
 				System.out.println("4. 사번이 일치하는 사원 정보 수정");
 				System.out.println("5. 사번이 일치하는 사원 정보 삭제");
-				
-				
-				
-				System.out.println("6. 입력 받은 부서와 일치하는 모든 사원 정보 조회");
-				// selectDeptEmp()
-				
-				System.out.println("7. 입력 받은 급여 이상을 받는 모든 사원 정보 조회");
-				// selectSalaryEmp()
-				
-				System.out.println("8. 부서별 급여 합 전체 조회");
-				// selectDeptTotalSalary()
-				// DB 조회 결과를 HashMap<String, Integer>에 옮겨 담아서 반환
-				// 부서코드, 급여 합 조회
-				
+				System.out.println("6. 입력 받은 부서와 일치하는 모든 사원 정보 조회");	 // selectDeptEmp()
+				System.out.println("7. 입력 받은 급여 이상을 받는 모든 사원 정보 조회"); // selectSalaryEmp()
+				System.out.println("8. 부서별 급여 합 전체 조회"); // selectDeptTotalSalary()
+				// DB 조회 결과를 HashMap<String, Integer>에 옮겨 담아서 반환 // 부서코드, 급여 합 조회
 				System.out.println("9. 주민등록번호가 일치하는 사원 정보 조회");
-				
-				System.out.println("10. 직급별 급여 평균 조회");
-				// selectJobAvgSalary()
+				System.out.println("10. 직급별 급여 평균 조회"); // selectJobAvgSalary()
 				// DB 조회 결과를 HashMap<String, Double>에 옮겨 담아서 반환 
 				// 직급명, 급여 평균(소수점 첫째자리) 조회
-				
-				
-				
 				
 				System.out.println("0. 프로그램 종료");
 				
@@ -69,7 +54,7 @@ public class EmployeeView {
 				
 				switch(input) {
 				case 1:  insertEmployee();   break;
-				case 2:  selectAll();  break;
+				case 2:  selectAll();	break;
 				case 3:  selectEmpId();   break;
 				case 4:  updateEmployee();   break;
 				case 5:  deleteEmployee();   break;
